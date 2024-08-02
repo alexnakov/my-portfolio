@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MenuIcon.scss'
 
 export default function MenuIcon() {
+  const [clicked, setClicked] = useState(false)
+
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    <span className='wrapper'>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      <div className='dropdown'>
+        
+      </div>
+    </span>
+    
   )
 }
